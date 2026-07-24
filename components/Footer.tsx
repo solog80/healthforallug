@@ -71,7 +71,7 @@ export default function Footer() {
             <a href="mailto:info@healthforalluganda.org" style={{ color: "#B9B2A2", textDecoration: "none" }}>
               info@healthforalluganda.org
             </a>
-            <span>+256 700 000 000</span>
+            <span>+256 705 942 121</span>
           </div>
         </div>
       </div>

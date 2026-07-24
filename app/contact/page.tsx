@@ -94,7 +94,7 @@ export default function Contact() {
               </div>
               <div>
                 <p style={{ fontWeight: 600, color: "#D9A441", margin: "0 0 4px", fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Phone</p>
-                <span>+256 700 000 000</span>
+                <span>+256 705 942 121</span>
               </div>
               <div>
                 <p style={{ fontWeight: 600, color: "#D9A441", margin: "0 0 4px", fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Location</p>

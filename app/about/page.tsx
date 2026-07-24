@@ -45,9 +45,7 @@ export default function About() {
 
       <section style={{ padding: "clamp(56px,7vw,88px) clamp(20px,5vw,64px)", background: "#163F28" }}>
         <div style={{ maxWidth: "1000px", margin: "0 auto", display: "grid", gridTemplateColumns: "220px 1fr", gap: "40px", alignItems: "center" }}>
-          <div style={{ width: "220px", height: "220px", borderRadius: "50%", background: "repeating-linear-gradient(135deg,#2c6b46,#2c6b46 12px,#255a3b 12px,#255a3b 24px)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto" }}>
-            <span style={{ color: "#D9A441", fontFamily: "monospace", fontSize: "12px", textAlign: "center", background: "rgba(22,63,40,0.85)", padding: "8px 12px", borderRadius: "3px" }}>founder photo</span>
-          </div>
+          <img src="/assets/Founder-Patricia.jpeg" alt="Lumu Patricia Ann, Founder" style={{ width: "220px", height: "220px", borderRadius: "50%", objectFit: "cover", margin: "0 auto", display: "block" }} />
           <div>
             <p style={{ color: "#D9A441", letterSpacing: "0.14em", fontWeight: 600, fontSize: "13px", textTransform: "uppercase", margin: "0 0 12px" }}>Founder</p>
             <h3 style={{ fontFamily: "var(--font-lora), serif", fontSize: "clamp(22px,2.6vw,28px)", color: "#FAF7F1", margin: "0 0 14px" }}>Lumu Patricia Ann</h3>
