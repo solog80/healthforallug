@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   title: "Health For All Uganda",
   description:
     "A Uganda where every community has the power to live healthy, productive lives. Health education, disease prevention, community empowerment and digital health solutions.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon-512.png",
+  },
 };
 
 export default function RootLayout({
