@@ -215,7 +215,7 @@ export default function Home() {
             link="/programs#herrise"
           />
 
-          {/* Program Card 2 */}
+          {/* Program Card 2 — Assistant Clinician, commented out for now
           <div
             style={{
               background: "#fff",
@@ -283,6 +283,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          */}
 
           {/* Program Card 3 */}
           <ProgramCard

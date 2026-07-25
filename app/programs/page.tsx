@@ -28,6 +28,7 @@ export default function Programs() {
         </div>
       </section>
 
+      {/* Assistant Clinician program — commented out for now
       <section id="assistant-clinician" style={{ padding: "clamp(56px,7vw,80px) clamp(20px,5vw,64px)", background: "#F1ECE0" }}>
         <div style={{ maxWidth: "1180px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "center" }}>
           <div style={{ width: "100%", aspectRatio: "4/3", background: "repeating-linear-gradient(135deg,#1F5D3B,#1F5D3B 12px,#1a4f32 12px,#1a4f32 24px)", borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center", order: 2 }}>
@@ -46,6 +47,7 @@ export default function Programs() {
           </div>
         </div>
       </section>
+      */}
 
       <section id="public-health-education" style={{ padding: "clamp(56px,7vw,88px) clamp(20px,5vw,64px)", maxWidth: "1180px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "center" }}>
         <div>

@@ -68,8 +68,8 @@ export default function Footer() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "14px" }}>
             <span>Kampala, Uganda</span>
-            <a href="mailto:info@healthforalluganda.org" style={{ color: "#B9B2A2", textDecoration: "none" }}>
-              info@healthforalluganda.org
+            <a href="mailto:health4alluganda@gmail.com" style={{ color: "#B9B2A2", textDecoration: "none" }}>
+              health4alluganda@gmail.com
             </a>
             <span>+256 705 942 121</span>
           </div>

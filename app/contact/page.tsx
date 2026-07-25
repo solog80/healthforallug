@@ -7,10 +7,22 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", interest: "partner", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
+  const interestLabels: Record<string, string> = {
+    partner: "Partnering with our programs",
+    volunteer: "Volunteering",
+    donate: "Donating",
+    other: "Something else",
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const subject = `Contact form: ${interestLabels[formData.interest]}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nInterested in: ${interestLabels[formData.interest]}\n\n${formData.message}`;
+    window.location.href = `mailto:health4alluganda@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setTimeout(() => setSubmitted(false), 5000);
   };
 
   return (
@@ -26,8 +38,8 @@ export default function Contact() {
           {submitted ? (
             <div style={{ textAlign: "center", padding: "40px 0" }}>
               <div style={{ width: "56px", height: "56px", borderRadius: "50%", background: "#1F5D3B", margin: "0 auto 20px" }} />
-              <h3 style={{ fontFamily: "var(--font-lora), serif", fontSize: "22px", color: "#163F28", margin: "0 0 10px" }}>Thank you</h3>
-              <p style={{ fontSize: "15px", color: "#5b5348", margin: 0 }}>Your message has been noted. We'll get back to you soon.</p>
+              <h3 style={{ fontFamily: "var(--font-lora), serif", fontSize: "22px", color: "#163F28", margin: "0 0 10px" }}>Almost there</h3>
+              <p style={{ fontSize: "15px", color: "#5b5348", margin: 0 }}>We've opened your email app with your message pre-filled &mdash; just hit send.</p>
             </div>
           ) : (
             <div>
@@ -90,7 +102,7 @@ export default function Contact() {
             <div style={{ display: "flex", flexDirection: "column", gap: "16px", fontSize: "15px", color: "#D8D2C4" }}>
               <div>
                 <p style={{ fontWeight: 600, color: "#D9A441", margin: "0 0 4px", fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Email</p>
-                <a href="mailto:info@healthforalluganda.org" style={{ color: "#FAF7F1", textDecoration: "none" }}>info@healthforalluganda.org</a>
+                <a href="mailto:health4alluganda@gmail.com" style={{ color: "#FAF7F1", textDecoration: "none" }}>health4alluganda@gmail.com</a>
               </div>
               <div>
                 <p style={{ fontWeight: 600, color: "#D9A441", margin: "0 0 4px", fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Phone</p>
@@ -105,7 +117,7 @@ export default function Contact() {
           <div style={{ background: "#F1ECE0", borderRadius: "8px", padding: "clamp(28px,4vw,36px)" }}>
             <h3 style={{ fontFamily: "var(--font-lora), serif", fontSize: "19px", color: "#163F28", margin: "0 0 12px" }}>Support our work</h3>
             <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#5b5348", margin: "0 0 20px" }}>Every contribution helps us reach more girls, families, and health workers. Get in touch and we'll share the best way for you to give.</p>
-            <a href="mailto:info@healthforalluganda.org" style={{ background: "#B54A2C", color: "#fff", padding: "12px 26px", borderRadius: "4px", fontWeight: 600, fontSize: "14px", display: "inline-block", textDecoration: "none" }}>Donate</a>
+            <a href="mailto:health4alluganda@gmail.com" style={{ background: "#B54A2C", color: "#fff", padding: "12px 26px", borderRadius: "4px", fontWeight: 600, fontSize: "14px", display: "inline-block", textDecoration: "none" }}>Donate</a>
           </div>
           <div style={{ border: "1px solid #E4DFD3", borderRadius: "8px", padding: "clamp(28px,4vw,36px)" }}>
             <h3 style={{ fontFamily: "var(--font-lora), serif", fontSize: "19px", color: "#163F28", margin: "0 0 12px" }}>Follow along</h3>
