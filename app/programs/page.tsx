@@ -1,4 +1,42 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Our Programs",
+  description:
+    "HerRise Initiative, Assistant Clinician, and Public Health Education — reaching girls, families, and frontline health workers across Uganda.",
+  openGraph: {
+    type: "website",
+    url: "https://www.healthforalluganda.org/programs",
+    siteName: "Health For All Uganda",
+    title: "Our Programs | Health For All Uganda",
+    description:
+      "HerRise Initiative, Assistant Clinician, and Public Health Education — reaching girls, families, and frontline health workers across Uganda.",
+    images: [
+      {
+        url: "/assets/herrise-1.jpeg",
+        width: 1080,
+        height: 787,
+        alt: "HerRise Initiative school outreach in Uganda",
+        type: "image/jpeg",
+      },
+      {
+        url: "/assets/herrise-bins.jpeg",
+        width: 1080,
+        height: 787,
+        alt: "HerRise Initiative sanitary bins",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Programs | Health For All Uganda",
+    description:
+      "HerRise Initiative, Assistant Clinician, and Public Health Education — reaching girls, families, and frontline health workers across Uganda.",
+    images: ["/assets/herrise-1.jpeg"],
+  },
+};
 
 export default function Programs() {
   return (

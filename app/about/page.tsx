@@ -1,3 +1,42 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Building a healthier Uganda, one community at a time. Learn about our vision, mission, core values, strategic pillars, and founder Lumu Patricia Ann.",
+  openGraph: {
+    type: "website",
+    url: "https://www.healthforalluganda.org/about",
+    siteName: "Health For All Uganda",
+    title: "About Us | Health For All Uganda",
+    description:
+      "Building a healthier Uganda, one community at a time. Learn about our vision, mission, core values, strategic pillars, and founder Lumu Patricia Ann.",
+    images: [
+      {
+        url: "/assets/Founder-Patricia.jpeg",
+        width: 807,
+        height: 844,
+        alt: "Lumu Patricia Ann, Founder of Health For All Uganda",
+        type: "image/jpeg",
+      },
+      {
+        url: "/assets/logo.jpeg",
+        width: 1056,
+        height: 1056,
+        alt: "Health For All Uganda logo",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Health For All Uganda",
+    description:
+      "Building a healthier Uganda, one community at a time. Learn about our vision, mission, core values, strategic pillars, and founder Lumu Patricia Ann.",
+    images: ["/assets/Founder-Patricia.jpeg"],
+  },
+};
+
 export default function About() {
   return (
     <main style={{ background: "#FAF7F1" }}>
