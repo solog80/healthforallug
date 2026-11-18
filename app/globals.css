@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,3 +14,25 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.pressable {
+  transition: transform 160ms var(--ease-out), background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.pressable:active {
+  transform: scale(0.97);
+}
+
+.book-card-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) 1fr;
+  gap: clamp(28px, 4vw, 48px);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .book-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
